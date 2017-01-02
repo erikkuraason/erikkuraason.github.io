@@ -8,7 +8,7 @@
 switch(user){
     
     case 'CLASSICAL':
-    var userClassical = prompt("What style period? Baroque, Classical, Romantic, or Modern").toUpperCase();
+    var userClassical = prompt("What style period? Baroque, Classical, Romantic, or Modern?").toUpperCase();
     
     if(user==="CLASSICAL"&&userClassical==="BAROQUE")
     {document.getElementById("computerResponse").innerHTML="Why did J.S. Bach have 20 children? <br> Because his organ didn't have any stops.";
