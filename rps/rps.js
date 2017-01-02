@@ -1,5 +1,5 @@
-window.onload = function () {
-  
+//window.onload = function () {
+  function rpsFunction(){
  
 var userChoice = prompt("Do you choose rock, paper or scissors?");
 var computerChoice = Math.random();
@@ -20,10 +20,10 @@ var compare = function (choice1, choice2){
     }
     else if(choice1==="rock"){
         if(choice2 === "scissors"){
-            return "Rock wins. You win";
+            return "Rock wins. You win.";
         }
         else {
-            return "paper wins";
+            return "Paper wins. You lose.";
         }
     }
     else if (choice1 === "paper"){
@@ -31,15 +31,15 @@ var compare = function (choice1, choice2){
             return "Paper wins. You win";
         }
         else {
-            return "scissors wins"
+            return "Scissors wins. You lose."
         }
     }
     else if (choice1 === "scissors"){
         if (choice2 === "rock"){
-            return "rock wins";
+            return "Rock wins. You lose.";
         }
         else {
-            return "scissors wins";
+            return "Scissors wins. You lose";
         }
     
     }
