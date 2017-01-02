@@ -1,8 +1,9 @@
-window.onload = function () {
+//window.onload = function () {
   
-  
+ function rpsFunction(){
+
  var user = prompt("What kind of music do you like? If you enter \"classical\" or \"jazz\", you might get an interesting answer.").toUpperCase();
-// document.getElementById("userChoice").innerHTML=user;
+
 
 switch(user){
     
@@ -67,7 +68,7 @@ switch(user){
     break;
     
     default:
-    document.getElementById("computerResponse").innerHTML="Whatever strokes your folks. <br> different floats for different boats.";
+    document.getElementById("computerResponse").innerHTML="Whatever strokes your folks. <br> Different floats for different boats.";
     }
 
 
