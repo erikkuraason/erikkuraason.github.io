@@ -2,7 +2,7 @@
   
  function rpsFunction(){
 
- var user = prompt("What kind of music do you like? If you enter \"classical\" or \"jazz\", you might get an interesting answer.").toUpperCase();
+ var user = prompt("What kind of music do you like? If you enter \"classical\" or \"jazz,\" you might get an interesting answer.").toUpperCase();
 
 
 switch(user){
@@ -33,7 +33,7 @@ switch(user){
     
     case 'JAZZ':
 
-    var userJazz = prompt("What kind of jazz? New Orleans, Swing, Bebop, Cool, or Hard Bop?" ).toUpperCase();
+    var userJazz = prompt("What kind of jazz? New Orleans, Swing, Bebop, or Hard Bop?" ).toUpperCase();
     if(userJazz ==="NEW ORLEANS")
     {document.getElementById("computerResponse").innerHTML="Do you know what it means to miss New Orleans?";
     }
