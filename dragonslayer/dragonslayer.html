@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Dragonslayer</title>
-        <link rel='stylesheet' type='text/css' href='style.css'/>
-        <script type='text/javascript' src='script.js'></script>
-	</head>
-	<body>
-<h2>Dragonslayer will be coming soon!</h2>
-    <br>
-    <a href="../index.html">Back to home page</a>    <br>
-    <a href="../index.html">Back to home page</a>
+	<title>Dragonslayer</title>
+	<link rel='stylesheet' type='text/css' href='style.css'/>
+        </head>
 
+	<body>
+
+	<h2>Dragonslayer</h2>
+
+	<p>Strike the dragon with your sword. 
+	<br>Each strike will randomly inflict from 0 to 5 points of damage. 
+	<br>If you inflict a total of 4 points of damage, the dragon dies.
+	<br>With each strike, you have a 50/50 chance of hitting or missing.
+	<br>But if you miss even once, he will kill you!
+	</p>
+
+	<button onclick = "dragonslayerFunction()">Start the battle!</button>
+
+	<br>
+	<br>
+
+	<div id="gameStatus"></div>
+
+	<script src="dragonslayer.js"></script>
 	</body>
 </html>
