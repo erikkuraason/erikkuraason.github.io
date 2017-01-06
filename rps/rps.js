@@ -46,15 +46,20 @@ var compare = function (choice1, choice2){
 };
 
 
-var element = document.getElementById("gameStatus");
-var newElement = document.createElement("p");
-element.appendChild(newElement);
-newElement.innerHTML = "Computer: " + computerChoice;
+var element1 = document.getElementById("gameStatus");
+var newElement1 = document.createElement("p");
+element1.appendChild(newElement1);
+newElement1.innerHTML = "You: " + userChoice;
 
-var secondElement = document.getElementById("gameStatus");
-var newSecondElement = document.createElement("p");
-secondElement.appendChild(newSecondElement);
-newSecondElement.innerHTML = compare(userChoice, computerChoice);
+var element2 = document.getElementById("gameStatus");
+var newElement2 = document.createElement("p");
+element2.appendChild(newElement2);
+newElement2.innerHTML = "Computer: " + computerChoice;
+
+var element3 = document.getElementById("gameStatus");
+var newElement3 = document.createElement("p");
+element3.appendChild(newElement3);
+newElement3.innerHTML = compare(userChoice, computerChoice);
 
 
 
