@@ -10,7 +10,11 @@ var youHit = Math.floor(Math.random()*2);
 
 
 //Generate 0, 1, 2, 3, 4, or 5. (Generate a number <1, multiply it by 5 to get a number <5, add 1 to get a number <6, floor it to get an integer <=5)
-var damageThisRound = Math.floor(Math.random()*5+1);
+
+var damageThisRound = Math.floor(Math.random()*4+1);
+
+
+//var damageThisRound = Math.floor(Math.random()*5+1);
 
 var totalDamage=0;
 
@@ -27,7 +31,7 @@ totalDamage+=damageThisRound;
 var element = document.getElementById("gameStatus");
 var newElement = document.createElement("p");
 element.appendChild(newElement);
-newElement.innerHTML = "Got'm!" + "<br> Damage this round:" + damageThisRound +  "<br> Total damage:" + totalDamage;
+newElement.innerHTML = "Got'm!" + "<br> Damage this round: " + damageThisRound +  "<br> Total damage: " + totalDamage;
  
 
 if(totalDamage>=4){
