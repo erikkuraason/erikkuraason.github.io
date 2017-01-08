@@ -2,7 +2,7 @@
   
  function rpsFunction(){
 
- var user = prompt("What kind of music do you like? If you enter \"classical\" or \"jazz,\" you might get an interesting answer.").toUpperCase();
+ var user = prompt("Which do you prefer, classical or jazz? (Enter either choice)").toUpperCase();
 
 
 switch(user){
@@ -59,6 +59,7 @@ switch(user){
     }
     break;
     
+    /*
     case 'COUNTRY':
     document.getElementById("computerResponse").innerHTML="My achey-breaky heart.";
     break;
@@ -66,6 +67,7 @@ switch(user){
     case 'ROCK':
     document.getElementById("computerResponse").innerHTML="I know, it's only rock and roll, but you like it.";
     break;
+    */
     
     default:
     document.getElementById("computerResponse").innerHTML="Whatever strokes your folks. <br> Different floats for different boats.";
