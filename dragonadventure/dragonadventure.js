@@ -63,7 +63,6 @@ function dragonOrNot(){
     var youHit = Math.floor(Math.random()*2);
     if(youHit){
         alert("The dragon is in front of you! Strike him with your sword before he kills you!");
-        alert("You have a 50% chance of hitting him.");
         alert("Each hit causes 1-4 points damage.");
         alert("A total of 4 points damage will kill him.");
         alert("You have a 50% chance of hitting him.");
