@@ -100,7 +100,7 @@ switch(user){
         alert("The village is dark and creepy.");
         dragonOrNot()
     }else if(userMiddle ==="R"){
-        alert("The ravine is dark and creepy.");
+        alert("The mountain is dark and creepy.");
         dragonOrNot();
     }else{
         alert("Hey, that wasn't one of the choices!");
