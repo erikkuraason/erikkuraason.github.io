@@ -1,7 +1,7 @@
 function phoneBook(){
 
     var contacts = [];
-    var wantToAdd = confirm("Do you want to add an entry");
+    var wantToAdd = confirm("Do you want to add an entry (Click \"OK\" for yes, \"Cancel\" for no.)");
 
     while(wantToAdd){
 
@@ -19,12 +19,13 @@ function phoneBook(){
 
         addEntry(firstName, lastName, phoneNumber);
 
-        var wantToAdd = confirm("Do you want to add an entry");
+        var wantToAdd = confirm("Do you want to add an entry? Click \"OK\" for yes, \"Cancel\" for no.");
 
-//end while loop wantToAdd
+    //end while loop wantToAdd
     };
 
     function printPerson(person) {
+        alert("First name: " + person.firstName +  ". Last name: " + person.lastName + ". Phone number: " + person.phoneNumber +".");
         var element = document.getElementById("display");
         var newElement = document.createElement("p");
         element.appendChild(newElement);
@@ -32,7 +33,7 @@ function phoneBook(){
     };
 
 
-    var wantToSearch = confirm("Do you want do search for an entry?")
+    var wantToSearch = confirm("Do you want do search for an entry? Click \"OK\" for yes, \"Cancel\" for no.")
 
     if(wantToSearch){
 
@@ -53,7 +54,7 @@ function phoneBook(){
     //end if(wantToSearch)
     };
 
-    var wantToDisplay = confirm("Do you want to display all entries?");
+    var wantToDisplay = confirm("Do you want to display all entries? They will be displayed one at a time. Click \"OK\" for yes, \"Cancel\" for no.");
     if(wantToDisplay){
         function list(){
 	        var contactsLength = contacts.length;
