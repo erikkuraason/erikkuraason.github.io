@@ -1,6 +1,6 @@
 window.onload = function () {
 
-$('#one').append('<form>Do you choose rock, paper or scissors?<br> <input type="text" name="message" value=""></form><button id="button">Go!</button>');
+$('#one').append('<form>Enter rock, paper or scissors<br>Click the \'Go\' button. Don\'t press enter.<br><br><input type="text" name="message" value=""></form><button id="button">Go!</button>');
 
     $('button').click(function() {
 
