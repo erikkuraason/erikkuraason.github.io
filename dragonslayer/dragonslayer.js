@@ -28,14 +28,16 @@ function dragonSlayerFunction(){
             //Generate 0, 1, 2, 3, 4, or 5. (Generate a number <1, multiply it by 5 to get a number <5, add 1 to get a number <6, floor it to get an integer <=5)
             var damageThisRound = Math.floor(Math.random()*4+1);
             totalDamage+=damageThisRound;
-   
+            
+            alert("Got'm! " + "Damage this round: " + damageThisRound + ". Total damage: " + totalDamage + ".")
             var element = document.getElementById("gameStatus");
             var newElement = document.createElement("p");
             element.appendChild(newElement);
             newElement.innerHTML = "Got'm!" + "<br> Damage this round: " + damageThisRound +  "<br> Total damage: " + totalDamage;
  
             if(totalDamage>=4){
- 
+                
+                alert("He's dead!")
                 var element = document.getElementById("gameStatus");
                 var newElement = document.createElement("p");
                 element.appendChild(newElement);
@@ -47,7 +49,7 @@ function dragonSlayerFunction(){
 
             //else if youHit = false
         }else{
-
+            alert("You missed! He killed you. You lose!")
             var element = document.getElementById("gameStatus");
             var newElement = document.createElement("p");
             element.appendChild(newElement);
