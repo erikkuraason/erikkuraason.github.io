@@ -4,7 +4,7 @@ $('#one').append('<form>Enter rock, paper or scissors<br>Click the \'Go\' button
 
     $('button').click(function() {
 
-        var userChoice = $("input[name=message]").val();
+        var userChoice = $("input[name=message]").val().toLowerCase();
         var computerChoice = Math.random();
 
         if (computerChoice < 0.34) {
